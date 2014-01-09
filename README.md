@@ -2,7 +2,9 @@
 
 > Converts html templates to JavaScript
 
-This is a fork of the [html2js repo](https://github.com/karlgoldstein/grunt-html2js), the original grunt task converts html to angular modules. This fork convert html to vanilla javascript.
+** THIS IS A FORK OF A FORK!**
+
+This is a fork of the [grunt-html-convert repo](https://github.com/soundstep/grunt-html-convert), the original grunt task converts html to angular modules. This fork convert html to vanilla javascript.
 
 ## Getting Started
 This plugin requires Grunt `~0.4.0`
@@ -33,7 +35,7 @@ Note that this plugin does *not* compile the templates.  It simply caches the te
 grunt.initConfig({
   htmlConvert: {
     options: {
-      // custom options, see below    
+      // custom options, see below
     },
     mytemplate: {
       src: ['src/**/*.tpl.html'],
@@ -95,7 +97,7 @@ function (moduleName) {
 Type: `Character`
 Default value: `"`
 
-Strings are quoted with double-quotes by default.  However, for projects 
+Strings are quoted with double-quotes by default.  However, for projects
 that want strict single quote-only usage, you can specify:
 
 ```
@@ -143,4 +145,5 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
+0.0.2 bug fix for coffee script
 0.0.1 convert the angular grunt task to vanilla javascript

@@ -1,4 +1,12 @@
 /*
+ * grunt-html-to-js
+ * https://github.com/tjeastmond/grunt-html-to-js
+ *
+ * Copyright (c) 2014 TJ Eastmond
+ * Licensed under the MIT license.
+ *
+ * Fork from:
+ *
  * grunt-html-convert
  * https://github.com/soundstep/grunt-html-convert
  *
@@ -59,17 +67,12 @@ var camelCased = function(str) {
       quoteChar + '] = ' + quoteChar +  content +
        quoteChar + ';\n';
 
-//    var module = 'angular.module(' + quoteChar + moduleName +
-//      quoteChar + ', []).run([' + quoteChar + '$templateCache' + quoteChar + ', function($templateCache) ' +
-//      '{\n' + indentString + '$templateCache.put(' + quoteChar + moduleName + quoteChar + ',\n' + doubleIndent  + quoteChar +  content +
-//       quoteChar + ');\n}]);\n';
-//
     return module;
   };
 
   // compile a template to an angular module
   var compileCoffeeTemplate = function(targetModule, moduleName, filepath, quoteChar, indentString, indentGlobal) {
-    var content = escapeContent(grunt.file.read(filepath), quoteChar, indentString);
+    var content = escapeContent(grunt.file.read(filepath), quoteChar, indentString, indentGlobal);
     var doubleIndent = indentString + indentString;
 
     var module = indentGlobal + camelCased(targetModule) + '[' + quoteChar + moduleName +

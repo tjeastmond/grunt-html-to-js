@@ -1,18 +1,15 @@
 {
-	"name": "grunt-html-convert",
+	"name": "grunt-html-to-js",
 	"description": "Compiles html to JavaScript",
-	"version": "0.0.1",
-	"homepage": "https://github.com/soundstep/grunt-html-convert",
+	"version": "0.0.2",
+	"homepage": "https://github.com/tjeastmond/grunt-html-to-js",
 	"author": {
-		"name": "Romuald Quantin",
-		"email": "romu@soundstep.com"
+		"name": "TJ Eastmond",
+		"email": "tj.eastmond@gmail.com"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/soundstep/grunt-html-convert.git"
-	},
-	"bugs": {
-		"url": "https://github.com/soundstep/grunt-html-convert/issues"
+		"url": "https://github.com/tjeastmond/grunt-html-to-js.git"
 	},
 	"licenses": [
 		{
@@ -37,6 +34,9 @@
 		"grunt": "~0.4.0"
 	},
 	"keywords": [
-		"gruntplugin"
+		"gruntplugin",
+		"html",
+		"grunt",
+		"html2js"
 	]
 }
