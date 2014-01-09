@@ -1,4 +1,4 @@
-# grunt-html-convert
+# grunt-html-to-js
 
 > Converts html templates to JavaScript
 
